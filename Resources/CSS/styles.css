@@ -1,0 +1,219 @@
+/* general styles */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: "Josefin Slab";
+    font-size: 20px;
+    background-color: hsl(51, 100%, 78%);
+    color: hsl(202, 3%, 40%);
+    margin: 0;
+}
+
+h2 {
+    color:hsl(23, 20%, 60%);
+    margin-bottom: 30px;
+    font-family: Sacramento;
+    font-size: 2.5rem;
+}
+
+h2::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -130px; 
+    height: 130px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:hsl(51, 100%, 78%);
+    border-bottom: 5px solid hsl(23, 20%, 69%);
+    z-index: 10;
+}
+
+h1 {
+    font-family: Sacramento;
+    font-size: 3rem;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: hsl(23, 20%, 60%);
+}
+
+nav ul {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+nav a {
+    text-decoration: none;
+    color: hsl(202, 3%, 40%);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+ nav a:active {
+    font-weight: 700;
+ }
+
+/* hero section */
+
+#hero {
+    margin-top: 120px;
+    margin-bottom: 40px;
+    background-image: url("../Images/images-final/banner3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero div {
+    height: min-content;
+    background-color: hsla(51, 100%, 78%, 0.788);
+}
+
+.banner-text {
+    margin: 20px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color:hsl(23, 20%, 60%);
+}
+
+/* products section */
+
+.items-gallery {
+    margin: 0 50px;
+    max-width: 950px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#products img {
+    width: 250px;
+    margin: 10px 20px;
+}
+
+.item {
+    position: relative;
+}
+
+.description {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0%;
+    background-color: rgba(255, 238, 143, 0.788);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.description p {
+    width: 200px;
+    text-align: center;
+    height: max-content;
+    background-color:hsl(51, 100%, 78%);
+    padding: 10px;
+}
+
+.description a {
+    text-decoration: underline;
+    color:hsl(202, 3%, 40%);
+}
+
+.description a:hover, .description a:active {
+    font-weight: 700;
+}
+
+/* staff section */
+
+#staff img {
+    height: 250px;
+    margin: 10px auto;
+}
+
+.staff-gallery {
+    max-width: 850px;
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: top;
+}
+
+.staff-member {
+    width: 250px;
+    margin: 0 15px;
+}
+
+.staff-member h3 {
+    margin-bottom: 0;
+}
+
+.staff-member p {
+    margin-top: 10px;
+}
+
+/* contact section */
+
+.contact-details {
+    display: inline-flex;
+    max-width: 850px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-details div {
+    margin: 0 20px 15px 20px;
+}
+
+/* footer */
+
+footer {
+    background-color:hsl(23, 20%, 60%);
+    color:hsl(51, 100%, 78%);
+    width: 100%;
+    text-align: left;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 20px;
+    font-size: 1rem;
+}
